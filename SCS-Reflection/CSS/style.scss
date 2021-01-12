@@ -10,11 +10,15 @@ $contact-hover: #84858f;
 $design: #926fb1;
 $design-hover: #7e57a0;
 $it: #4183d7;
+$it-hover: #286abd;
 $telecom: #d64541;
 $telecom-hover: #c42e2a;
 $software: #67809f;
+$software-hover: #526781;
 $marketing: #2ecc71;
+$marketing-hover: #25a25a;
 $cyber: #f62459;
+$cyber-hover: #e80a42;
 $brand-color: #333645;
 //
 
@@ -297,7 +301,7 @@ nav {
     }
 }
 
-// Nvigation Section
+// Navigation Section
 
 .nav-wrapper {
     background-color: $brand-color;
@@ -305,20 +309,20 @@ nav {
 
 .nav-bar {
     display: flex;
-    div {
+    .nav-item{
         height: 99px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-    a {
+    .nav-parent-link {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         text-transform: uppercase;
         color: #fff;
         margin-bottom: -5px;
         text-decoration: none;
+        width: 100%;
+        height: 100%;
         span {
             font-size: 20px;
         }
@@ -350,122 +354,300 @@ nav {
     color: $cyber;
 }
 
-//Banner slideshow
-.banner {
-    position: relative;
-    height: 100%;
-    min-height: 490px;
-    #banner-slider {                                                            // sizing the banner slides
-        height: 100%;
-        div {
-            height: 100%;
-        }
+//navigation sub menu.
+
+
+
+
+.design-hover:hover .design-highlight {          //lets the link be highlighted while hovering over sub menu.
+    background-color: $design;
+}
+.it-hover:hover .it-highlight {
+    background-color: $it;
+}
+.telecom-hover:hover .telecom-highlight {
+    background-color: $telecom;
+}
+.software-hover:hover .software-highlight {
+    background-color: $software;
+}
+.marketing-hover:hover .marketing-highlight {
+    background-color: $marketing;
+}
+.cyber-hover:hover .cyber-highlight {
+    background-color: $cyber;
+}                                                //====
+
+.nav-sub-menu-wrapper {
+    z-index: 99;
+    width: 2000px;
+    position: absolute;
+    top: 98px;
+    .container {
+        padding: 0px;
     }
-    .banner-content {
-        position: relative;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: #fff;
-        h2 {
-            font-size: 48px;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-        }
-        p {
-            margin-bottom: 35px;
-            font-size: 18px;
-            line-height: 2.25rem;
-        }
+}
+
+.nav-sub-menu {
+    color: #fff;
+    width: 100%;
+    height: 45px;
+    justify-content: start;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-item {
+    .nav-sub-menu {
         a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 225px;
-            height: 62px;
-            padding: 5px 20px;
-            text-transform: uppercase;
+            text-decoration: none;
             color: #fff;
-            font-size: 18px;
-            i {
-                margin-left: 12px;
-            }
+            text-transform: uppercase;
+        }
+        .text-pad {
+            padding-left: 30px;
         }
     }
-    .carousel-item {      
-        &::after {                                                           //Linear gradient for banner slides.
-        content:"";
-        position:absolute;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
-        }
-      background-position: center;
-      background-size: cover;
-    }  
-    .home-banner-1 {
-        background-image: url(../images/home.jpg);
-        a {
-            background-color: $design;
-        }
+    .sub-menu-a-line {
+        margin-left: 30px;
     }
-    .home-banner-2 {
-        background-image: url(../images/home-57sJ.jpg);
-        a {
-            background-color: $it;
-        }
+    .sub-design {
+        background-color: $design-hover;
+        display: none;
+        left: -370px;
     }
-    .home-banner-3 {
-        background-image: url(../images/home-5yqm.jpg);
-        a {
-            background-color: $telecom;
-        }
+    .sub-it {
+        background-color: $it-hover;
+        display: none;
+        left: -570px;
     }
-    .home-banner-4 {
-        background-image: url(../images/home-sqvx.jpg);
-        a {
-            background-color: $software;
-        }
+    .sub-telecom {
+        background-color: $telecom-hover;
+        display: none;
+        left: -770px;
     }
-    .home-banner-5 {
-        background-image: url(../images/home-JQsO.jpg);
-        a {
-            background-color: $marketing;
-            width: 345px;                               //changes marketing button size.
-        }
+    .sub-software {
+        background-color: $software-hover;
+        display: none;
+        left: -970px;
     }
-    .home-banner-6 {
-        background-image: url(../images/home-lQs1.jpg);
-        a {
-            background-color: $cyber;
-        }
+    .sub-marketing {
+        background-color: $marketing-hover;
+        display: none;
+        left: -1170px;
     }
-    li {
-        border-radius: 50%;
-        width: 11px;
-        height: 11px;
-        margin: 0px 10px;
-        position: relative;
+    .sub-cyber {
+        background-color: $cyber-hover;
+        display: none;
+        left: -1370px;
     }
-    .carousel-indicators {
-        margin-bottom: 40px;
-        .active {
-            span {
-                content: "";                                                      // adds the white outline to carousel indicators.
-                border-radius: 50%;
-                border: 2px solid #fff;
-                position: absolute;
-                width: 23px;
-                height: 23px;
-                top: -6px;
-                left: -6px;
-            }
+}
+
+.nav-link-design:hover {
+    .sub-design {
+        display: block;
+    }
+}
+.nav-link-it:hover {
+    .sub-it {
+        display: block;
+    }
+}
+.nav-link-telecom:hover {
+    .sub-telecom {
+        display: block;
+    }
+}
+.nav-link-software:hover {
+    .sub-software {
+        display: block;
+    }
+}
+.nav-link-marketing:hover {
+    .sub-marketing {
+        display: block;
+    }
+}
+.nav-link-cyber:hover {
+    .sub-cyber {
+        display: block;
+    }
+}
+
+
+//Banner slideshow
+
+.banner-wrapper {
+    height: 100%;
+}
+
+
+.owl-carousel {
+    width: 100%;
+    height: 100%;
+    div:not(.owl-controls) {
+		height: 100%;
+	}
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 35px;
+        line-height: 2.25rem;
+    }
+    a {
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        min-height: 62px;
+        max-width: 225px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+    }
+    h1,
+    p,
+    a {
+        z-index: 2;
+    }
+    i {
+        margin-left: 12px;
+    }
+}
+
+.slide::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-1 {
+    background-image: url(../images/home.jpg);
+    a {
+        background-color: $design;
+        &:hover {
+            background-color: $design-hover;
         }
     }
 }
+.slide-2 {
+    background-image: url(../images/home-57sJ.jpg);
+    a {
+        background-color: $it;
+        &:hover {
+            background-color: $it-hover;
+        }
+    }
+}
+.slide-3 {
+    background-image: url(../images/home-5yqm.jpg);
+    a {
+        background-color: $telecom;
+        &:hover {
+            background-color: $telecom-hover;
+        }
+    }
+}
+.slide-4 {
+    background-image: url(../images/home-sqvx.jpg);
+    a {
+        background-color: $software;
+        &:hover {
+            background-color: $software-hover;
+        }
+    }
+}
+.slide-5 {
+    background-image: url(../images/home-JQsO.jpg);
+    a {
+        max-width: 346px;
+        background-color: $marketing;
+        &:hover {
+            background-color: $marketing-hover;
+        }
+    }
+}
+.slide-6 {
+    background-image: url(../images/home-lQs1.jpg);
+    a {
+        background-color: $cyber;
+        &:hover {
+            background-color: $cyber-hover;
+        }
+    }
+}
+
+.owl-dots {
+    height: 30px !important;
+    position: absolute;
+    bottom: 35px;
+    margin: 0px;
+    width: 100%;
+    
+}
+
+.owl-theme .owl-dots .owl-dot span, 
+.owl-theme .owl-dots  span {
+    background: #ccc;
+    width: 11px;
+    height: 11px;
+}
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff;
+    position: relative;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    &::after {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        }
+}
+
+.owl-dot {
+    width: 31px;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+
 
 
 //Read more section
@@ -751,13 +933,14 @@ nav {
         width: 100%;
         height: auto;
     }
-    div {
+    .client-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;  
-        padding: 0px 20px;
+        margin: 0px 20px;
         flex-grow: 1;
+        position: relative;
         position: relative;
     }
     .c-img {
@@ -775,6 +958,81 @@ nav {
     }
 }
 
+.client-tooltip {
+    padding: 20px 20px 20px 20px;
+    background-color: $brand-color;
+    max-width: 250px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 120px;
+    display: none;
+    .tooltip-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    p {
+        font-size: .8125rem;
+        line-height: 1.375rem;
+        margin: 0px;
+    }
+    h3 {
+        font-size: 1.125rem;
+        margin: 0px;
+    }
+    .tooltip-line {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        display: block;
+        margin: 10px 0px;
+    }
+}
+.tooltip-arrow {
+    bottom: 50px;
+    display: none;
+}
+
+.client-wrapper {
+    i {
+        font-size: 125px;
+        position: absolute;
+        color: $brand-color;
+    }
+    &:hover {
+        .client-tooltip,
+        .tooltip-arrow {
+            display: block;
+        }
+    }
+}
+
+
+.busseys-tooltip {
+    i {
+        top: 70px;
+    }
+}
+.crane-tooltip {
+    i {
+        top: 115px;
+    }
+}
+.beat-tooltip {
+    width: 250px;
+    i {
+        top: 70px;
+    }
+}
+.diver-tooltip {
+    i{
+        top: 115px;
+    } 
+}
+
+
 // Footer Section
 
 .footer {
@@ -787,6 +1045,7 @@ nav {
     }
     ul {
         list-style: none;
+        padding: 0px;
     }
     a {
         text-decoration: none;
@@ -1040,6 +1299,37 @@ nav {
             margin-left: 20px;
         }
     }
+    .nav-item {
+        .nav-sub-menu {
+            a {
+                font-size: 13px;
+            }
+            .text-pad {
+                padding-left: 20px;
+            }
+        }
+        .sub-menu-a-line {
+            margin-left: 20px;
+        }
+        .sub-design {
+            left: -450px;
+        }
+        .sub-it {
+            left: -570px;
+        }
+        .sub-telecom {
+            left: -770px;
+        }
+        .sub-software {
+            left: -950px;
+        }
+        .sub-marketing {
+            left: -1000px;
+        }
+        .sub-cyber {
+            left: -1230px;
+        }
+    }
 } 
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1070,6 +1360,7 @@ nav {
     }
     .banner-content {
         align-items: center;
+        text-align: center;
     }
     .mm-menu {                                      // off canvas menu width.
         max-width: 275px;
@@ -1078,6 +1369,7 @@ nav {
         display: flex;
     }
 } 
+
 
 @media (max-width: 767px) {
     .brand-logo {
@@ -1129,6 +1421,7 @@ nav {
     }
 }
 
+
 @media (max-width: 450px) {
     .header-wrapper {
         .col-9 {
@@ -1160,3 +1453,5 @@ nav {
         transform:translate3d(-275px,0,0);
     }
 }                                                                                         
+
+

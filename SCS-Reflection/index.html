@@ -6,7 +6,11 @@
     <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
     <link href="plug-in/mmenu.css" rel="stylesheet">
     <link rel="stylesheet" href="plug-in/mburger.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -152,125 +156,151 @@
             <div class="nav-wrapper">
                 <div class="container">
                     <div class="nav-bar">
-                        <div class="no-pad col-2 ">
-                            <a href="https://www.netmatters.co.uk/web-design"><i class="fas fa-code web-icon"></i><small>web</small><span>design</span></a>
+                        <div class="no-pad col-2 nav-item nav-link-design design-hover">
+                            <a href="https://www.netmatters.co.uk/web-design" class="nav-parent-link design-highlight"><i class="fas fa-code web-icon"></i><small>web</small><span>design</span></a>
+                            <div class="nav-sub-menu-wrapper sub-design">
+                                <div class="container">
+                                    <div class="nav-sub-menu">
+                                        <a href="https://www.netmatters.co.uk/web-design/website-design">stylish websites<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/web-design/ecommerce-development" class="text-pad">ecommerce stores<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/web-design/branding" class="text-pad">branding<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/web-design/mobile-apps-development" class="text-pad">apps<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/web-design/web-hosting" class="text-pad">web hosting<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/web-design/pay-monthly-websites" class="text-pad">pay monthly websites</a>
+                                    </div>
+                                </div>
+                            </div>                           
                         </div>
-                        <div class="no-pad col-2">
-                            <a href="https://www.netmatters.co.uk/it-support"><i class="fas fa-tv it-icon"></i><small>it</small><span>support</span></a>
-                        </div>
-                        <div class="no-pad col-2">
-                            <a href="https://www.netmatters.co.uk/telecoms-services"><i class="fas fa-phone-alt telecom-icon"></i><small>telecoms</small><span>services</span></a>
-                        </div>
-                        <div class="no-pad col-2">
-                            <a href="https://www.netmatters.co.uk/bespoke-software"><i class="fas fa-th software-icon"></i><small>bespoke</small><span>software</span></a>
-                        </div>
-                        <div class="no-pad col-2">
-                            <a href="https://www.netmatters.co.uk/digital-marketing"><i class="fas fa-signal marketing-icon"></i><small>digital</small><span>marketing</span></a>
-                        </div>
-                        <div class="no-pad col-2">
-                            <a href="https://www.netmatters.co.uk/cyber-security"><i class="fas fa-shield-alt cyber-icon"></i><small>cyber</small><span>security</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="banner">
-                <div id="banner-slider" class="carousel slide" data-ride="carousel" data-touch="true">
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#banner-slider" data-slide-to="0" class="active"><span></span></li>     <!-- span is used to create the indicator outline while active. -->
-                        <li data-target="#banner-slider" data-slide-to="1"><span></span></li>
-                        <li data-target="#banner-slider" data-slide-to="2"><span></span></li>
-                        <li data-target="#banner-slider" data-slide-to="3"><span></span></li>
-                        <li data-target="#banner-slider" data-slide-to="4"><span></span></li>
-                        <li data-target="#banner-slider" data-slide-to="5"><span></span></li>
-                    </ul>
-                
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item home-banner-1 active">
-                            <div class="container">
-                                <div class="banner-content">
-                                    <h2>web design</h2>
-                                    <p>
-                                        For businesses looking to make a strong
-                                        <br>
-                                        and effective first impression.
-                                    </p>
-                                    <a href="https://www.netmatters.co.uk/web-design" class="btn">find out more<i class="fas fa-arrow-right"></i></a>
+                        <div class="no-pad col-2 nav-item nav-link-it it-hover">
+                            <a href="https://www.netmatters.co.uk/it-support" class="nav-parent-link it-highlight"><i class="fas fa-tv it-icon"></i><small>it</small><span>support</span></a>
+                            <div class="nav-sub-menu-wrapper sub-it">
+                                <div class="container">
+                                    <div class="nav-sub-menu">
+                                        <a href="https://www.netmatters.co.uk/it-support/managed-it-support">managed it<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/it-support/business-it-support" class="text-pad">business it<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/it-support/office-365-for-business" class="text-pad">office 365<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/it-support/it-consultancy" class="text-pad">consultancy<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/it-support/cloud-service-provider" class="text-pad">cloud provider<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/it-support/data-backup-disaster-recovery" class="text-pad">data backup</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item home-banner-2">
-                            <div class="container">
-                                <div class="banner-content">
-                                    <h2>it support</h2>
-                                    <p>
-                                        Fast and cost-effective IT support
-                                        <br>
-                                        services for your business.
-                                    </p>
-                                    <a href="https://www.netmatters.co.uk/it-support" class="btn">find out more<i class="fas fa-arrow-right"></i></a>
+                        <div class="no-pad col-2 nav-item nav-link-telecom telecom-hover">
+                            <a href="https://www.netmatters.co.uk/telecoms-services" class="nav-parent-link telecom-highlight"><i class="fas fa-phone-alt telecom-icon"></i><small>telecoms</small><span>services</span></a>
+                            <div class="nav-sub-menu-wrapper sub-telecom">
+                                <div class="container">
+                                    <div class="nav-sub-menu">
+                                        <a href="https://www.netmatters.co.uk/telecoms-services/gigabit-voucher-scheme">gigabit voucher<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/telecoms-services/hosted-business-voip" class="text-pad">hosted voip<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/telecoms-services/business-voip" class="text-pad">business voip<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/telecoms-services/business-broadband-provider" class="text-pad">business broadband<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/telecoms-services/leased-lines-provider" class="text-pad">leased line<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/telecoms-services/3cx-system" class="text-pad">3cx systems</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item home-banner-3">
-                            <div class="container">
-                                <div class="banner-content">
-                                    <h2>telecom services</h2>
-                                    <p>
-                                        A new approach to connectivity, see how 
-                                        <br>
-                                        we can help your business.
-                                    </p>
-                                    <a href="https://www.netmatters.co.uk/telecoms-services" class="btn">find out more<i class="fas fa-arrow-right"></i></a>
+                        <div class="no-pad col-2 nav-item nav-link-software software-hover">
+                            <a href="https://www.netmatters.co.uk/bespoke-software" class="nav-parent-link software-highlight"><i class="fas fa-th software-icon"></i><small>bespoke</small><span>software</span></a>
+                            <div class="nav-sub-menu-wrapper sub-software">
+                                <div class="container">
+                                    <div class="nav-sub-menu">
+                                        <a href="https://www.netmatters.co.uk/bespoke-software/workflow-solutions">workflow solutions<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/bespoke-software/business-automation" class="text-pad">automation<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/bespoke-software/systems-integrations" class="text-pad">system intergration<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/bespoke-software/database-management-software" class="text-pad">database management<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/bespoke-software/sharepoint-development" class="text-pad">sharepoint<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/bespoke-software/erp-software" class="text-pad">erp</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item home-banner-4">
-                            <div class="container">
-                                <div class="banner-content">
-                                    <h2>bespoke software</h2>
-                                    <p>
-                                        Bring your business together
-                                        <br>
-                                        with solutions that grow with you.
-                                    </p>
-                                    <a href="https://www.netmatters.co.uk/bespoke-software" class="btn">find out more<i class="fas fa-arrow-right"></i></a>
+                        <div class="no-pad col-2 nav-item nav-link-marketing marketing-hover">
+                            <a href="https://www.netmatters.co.uk/digital-marketing" class="nav-parent-link marketing-highlight"><i class="fas fa-signal marketing-icon"></i><small>digital</small><span>marketing</span></a>
+                            <div class="nav-sub-menu-wrapper sub-marketing">
+                                <div class="container">
+                                    <div class="nav-sub-menu">
+                                        <a href="https://www.netmatters.co.uk/digital-marketing/seo-search-engine-optimisation">search (seo)<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/digital-marketing/ppc" class="text-pad">paid (ppc)<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/digital-marketing/conversion-marketing" class="text-pad">converstion (cro)<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/digital-marketing/email-marketing" class="text-pad">email<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/digital-marketing/social-media-marketing" class="text-pad">social media<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/digital-marketing/content-marketing" class="text-pad">content</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item home-banner-5">
-                            <div class="container">
-                                <div class="banner-content">
-                                    <h2>digital marketing</h2>
-                                    <p>
-                                        Generating you new business through
-                                        <br>
-                                        results-driven marketing activities.
-                                    </p>
-                                    <a href="https://www.netmatters.co.uk/digital-marketing" class="btn">see how we can help you<i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item home-banner-6">
-                            <div class="container">
-                                <div class="banner-content">
-                                    <h2>cyber security</h2>
-                                    <p>
-                                        Keeping businesses and their customers
-                                        <br>
-                                        sensitive information protected.
-                                    </p>
-                                    <a href="https://www.netmatters.co.uk/cyber-security" class="btn">find out more<i class="fas fa-arrow-right"></i></a>
+                        <div class="no-pad col-2 nav-item nav-link-cyber cyber-hover">
+                            <a href="https://www.netmatters.co.uk/cyber-security" class="nav-parent-link cyber-highlight"><i class="fas fa-shield-alt cyber-icon"></i><small>cyber</small><span>security</span></a>
+                            <div class="nav-sub-menu-wrapper sub-cyber">
+                                <div class="container">
+                                    <div class="nav-sub-menu">
+                                        <a href="https://www.netmatters.co.uk/cyber-security/cyber-security-assessment">assessment<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/cyber-security/cyber-security-management" class="text-pad">management<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/cyber-security/cyber-penetration-testing" class="text-pad">penetration testing<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/cyber-security/cyber-essentials-certification" class="text-pad">cyber essentials<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/cyber-security/pci-compliance" class="text-pad">pci/dss<span class="sub-menu-a-line">-</span></a>
+                                        <a href="https://www.netmatters.co.uk/cyber-security/hacker-prevention" class="text-pad">hacker prevention</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <div class="banner-wrapper">
+                <div class="owl-carousel owl-theme">
+                    <div class="slide slide-1">
+                        <div class="slide-content">
+                            <div class="container banner-content">
+                                <h1>web design</h1>
+                                <p>For businesses looking to make a strong<br>and effective first impression</p>
+                                <a href="https://www.netmatters.co.uk/web-design">find out more<i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-2">
+                        <div class="container banner-content">
+                            <h1>it support</h1>
+                            <p>Fast and cost effective IT support<br>services for your business</p>
+                            <a href="https://www.netmatters.co.uk/it-support">find out more<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="slide slide-3">
+                        <div class="container banner-content">
+                            <h1>telecoms services</h1>
+                            <p>A new approach to connectivity, see how<br>we can help your business.</p>
+                            <a href="https://www.netmatters.co.uk/telecoms-services">find out more<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="slide slide-4">
+                        <div class="container banner-content">
+                            <h1>Bespoke Software</h1>
+                            <p>Bring your business together<br>with solutions that grow with you.</p>
+                            <a href="https://www.netmatters.co.uk/bespoke-software">find out more<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="slide slide-5">
+                        <div class="container banner-content">
+                            <h1>Digital Marketing</h1>
+                            <p>Generating you new business through<br>results-driven marketing activities.</p>
+                            <a href="https://www.netmatters.co.uk/digital-marketing">see how we can help you<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="slide slide-6">
+                        <div class="container banner-content">
+                            <h1>cyber Security</h1>
+                            <p>Keeping businesses and their customers<br>sensitive information protected.</p>
+                            <a href="https://www.netmatters.co.uk/cyber-security">find out more<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
         </div>
 
 
@@ -437,25 +467,57 @@
 
         <div class="container no-pad">
             <div class="client-content">
-                <div>
+                <div class="client-wrapper">
+                    <div class="client-tooltip busseys-tooltip">
+                        <div class="tooltip-content">
+                            <h3>Busseys</h3>
+                            <span class="tooltip-line"></span>
+                            <p>One of the UK's leading Ford dealerships.</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-caret-down tooltip-arrow"></i>
                     <span>
                         <img src="images/home-gZQR.png" alt="Busseys color" class="c-img">
                         <img src="images/home-T5gi.jpg" alt="Busseys" class="bw-img">
                     </span>
                 </div>
-                <div>
+                <div class="client-wrapper">
+                    <div class="client-tooltip crane-tooltip">
+                        <div class="tooltip-content">
+                            <h3>Crane Garden Builders</h3>
+                            <span class="tooltip-line"></span>
+                            <p>Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in the UK.</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-caret-down tooltip-arrow"></i>
                     <span>
                         <img src="images/home-MjHw.png" alt="Crane garden buildings color" class="c-img">
                         <img src="images/home-BsyK.jpg" alt="Crane garden buildings" class="bw-img">
                     </span>
                 </div>
-                <div>
+                <div class="client-wrapper">
+                    <div class="client-tooltip beat-tooltip">
+                        <div class="tooltip-content">
+                            <h3>Beat</h3>
+                            <span class="tooltip-line"></span>
+                            <p>The UK's eating disorder charity founded in 1989.</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-caret-down tooltip-arrow"></i>
                     <span>
                         <img src="images/home-ukEL.png" alt="Beat color" class="c-img">
                         <img src="images/home-RfLc.jpg" alt="Beat" class="bw-img">
                     </span>
                 </div>
-                <div>
+                <div class="client-wrapper">
+                    <div class="client-tooltip diver-tooltip"> 
+                        <div class="tooltip-content">
+                            <h3>Northern Diver</h3>
+                            <span class="tooltip-line"></span>
+                            <p>Global water based equipment manufacturers for sport, military, commercial and rescue businesses.</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-caret-down tooltip-arrow"></i>
                     <span>
                         <img src="images/home-kGn4.png" alt="Northern Diver color" class="c-img">
                         <img src="images/home-jHUl.jpg" alt="Norhtern Diver" class="bw-img">
@@ -570,12 +632,14 @@
             </div>
         </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="banner.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="plug-in/menu-plug.js"></script>
     <script src="plug-in/mmenu.js"></script>
     <script src="cookie.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
