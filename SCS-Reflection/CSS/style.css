@@ -1423,8 +1423,16 @@ nav ul {
   background-color: #999aa2;
 }
 
+#cookie-popup .cookie-accept:hover {
+  background-color: #84858f;
+}
+
 #cookie-popup .cookie-settings {
   background-color: #926fb1;
+}
+
+#cookie-popup .cookie-settings:hover {
+  background-color: #7e57a0;
 }
 
 @media (min-width: 1260px) {
@@ -1688,5 +1696,9 @@ nav ul {
     -webkit-transform: translate3d(-275px, 0, 0);
     transform: translate3d(-275px, 0, 0);
   }
+}
+
+body {
+  overflow: initial !important;
 }
 /*# sourceMappingURL=style.css.map */

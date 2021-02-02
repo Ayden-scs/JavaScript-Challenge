@@ -1188,9 +1188,15 @@ nav {
     }
     .cookie-accept {
         background-color: $contact;
+        &:hover {
+            background-color: $contact-hover;
+        }
     }
     .cookie-settings {
         background-color: $design;
+        &:hover {
+            background-color: $design-hover;
+        }
     }
 }
 
@@ -1454,4 +1460,6 @@ nav {
     }
 }                                                                                         
 
-
+body{
+      overflow:initial !important; //fix scroll bar issue with menu
+}
